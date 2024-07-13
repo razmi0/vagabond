@@ -2,7 +2,7 @@ export const CONSTANT = {
   default: {
     subject: {
       speed: 15,
-      color: "white",
+      color: "#fb8500",
       width: 20,
       height: 20,
     },
