@@ -7,7 +7,7 @@ if (!speedInput) throw new Error("No input found");
 const speedOutput = speedControl.lastElementChild as HTMLOutputElement;
 if (!speedOutput) throw new Error("No output found");
 
-export const branchControlPanel = (subject: InstanceType<SubjectClassType>) => {
+export const connectControlPanel = (subject: InstanceType<SubjectClassType>) => {
   speedOutput.textContent = subject.getSpeed().toString();
   speedInput.value = subject.getSpeed().toString();
 
