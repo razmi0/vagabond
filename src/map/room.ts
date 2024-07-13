@@ -8,7 +8,6 @@ const maxRoomWidth = 7 * pieceSize;
 const minRoomWidth = 3 * pieceSize;
 const maxRoomHeight = 5 * pieceSize;
 const minRoomHeight = 3 * pieceSize;
-
 const maxExists = 4;
 
 class Room {
@@ -48,7 +47,6 @@ class Room {
     for (let i = 0; i < this.nExits; i++) {
       const exit = exitPosition[Math.floor(Math.random() * exitPosition.length)];
       exitPosition = exitPosition.filter((pos) => pos !== exit);
-      console.log("exit : ", exit);
       switch (exit) {
         case "top":
           this.canvas.drawRect(
