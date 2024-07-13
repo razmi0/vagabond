@@ -41,3 +41,15 @@ h5,
 h6 {
   @apply text-blue-800;
 }
+
+.control-panel {
+  @apply absolute top-0 right-0 mr-5 mt-5 min-w-80 px-4 py-2 bg-slate-200/80 rounded-lg text-black font-medium;
+
+  #control-speed {
+    @apply flex place-content-center gap-2 w-full;
+
+    input[type="range"] {
+      @apply accent-slate-200 w-44;
+    }
+  }
+}
