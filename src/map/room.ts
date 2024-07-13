@@ -42,6 +42,15 @@ class Room {
     this.drawExits();
   }
 
+  public isInside(coord: [number, number]) {
+    return (
+      coord[0] >= this.coord[0] &&
+      coord[0] <= this.coord[0] + this.width &&
+      coord[1] >= this.coord[1] &&
+      coord[1] <= this.coord[1] + this.height
+    );
+  }
+
   private drawExits() {
     let exitPosition = ["top", "bot", "right", "left"];
     for (let i = 0; i < this.nExits; i++) {
