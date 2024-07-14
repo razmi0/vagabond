@@ -53,3 +53,17 @@ h6 {
     }
   }
 }
+
+.cli-panel {
+  @apply absolute bottom-0 right-0 mr-5 mb-5 min-w-80 px-4 py-2 bg-slate-200/80 rounded-lg text-black font-normal flex flex-col gap-2;
+
+  #cli-history {
+    p {
+      @apply my-1 text-sm;
+    }
+  }
+
+  #cli-input {
+    @apply w-full ps-2;
+  }
+}

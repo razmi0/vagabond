@@ -590,12 +590,25 @@ video {
   position: absolute;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .right-0{
   right: 0px;
 }
 
 .top-0{
   top: 0px;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .mr-5{
@@ -610,8 +623,16 @@ video {
   display: flex;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .min-w-80{
   min-width: 20rem;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .place-content-center{
@@ -638,6 +659,10 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .tabular-nums{
@@ -738,5 +763,42 @@ h6{
     input[type="range"]{
       accent-color: #e2e8f0;
     }
+  }
+}
+
+.cli-panel{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  min-width: 20rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(226 232 240 / 0.8);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  #cli-history {
+    p{
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+    p{
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+  #cli-input{
+    width: 100%;
+  }
+  #cli-input{
+    padding-inline-start: 0.5rem;
   }
 }
