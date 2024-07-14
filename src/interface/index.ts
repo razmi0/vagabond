@@ -81,7 +81,8 @@ export const connectCliPanel = () => {
         validCmd.run(cliHistory);
       }
       if (deleteNextEntry) deleteEntry();
-      countEntries() >= CONSTANT.maxHistoryCmds ? toggleDeleteNextEntry() : insertEntry(command);
+      countEntries() >= CONSTANT.maxHistoryCmds && toggleDeleteNextEntry();
+      insertEntry(command);
       cliInput.value = "";
     }
   });
